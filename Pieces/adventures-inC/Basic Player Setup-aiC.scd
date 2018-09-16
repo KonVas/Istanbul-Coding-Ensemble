@@ -3,7 +3,7 @@
 s.reboot;
 ~numOuts = 12;
 // input
-"VibInput.scd".resolveRelative.load;
+"input-aiC.scd".resolveRelative.load;
 
 ~soloDef = \default;
 
