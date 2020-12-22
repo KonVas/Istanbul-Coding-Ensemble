@@ -1,3 +1,5 @@
+//relies on BatLib quark
+
 (
 s.options.numBuffers = 8192;
 s.options.numPrivateAudioBusChannels = 8192;
@@ -29,7 +31,7 @@ ServerTree.add(~bvFunc);
 
 
 // discover others
-~win = Window("BEERtopia").front;
+~win = Window("iceDonia").front;
 ~win.bounds = ~win.bounds.moveTo(0, 600);
 ~win.layout = VLayout.new.add(~listView = ListView.new);
 
@@ -77,4 +79,6 @@ History.start;
 		{~historyGUI.updateLines;}.defer;
 	});
 });
+
+StageLimiter.activate(2);
 )

@@ -5,8 +5,8 @@
 
 
 	{
-		win = Window("ICE-Code Display")
-		.background_(Color.black).alpha_(0.09)
+		win = Window("Code Display")
+		.background_(Color.black).alpha_(1)
 		.view.keyDownAction_(
 			{|v, c, m , u, k|
 				switch(k,
@@ -19,6 +19,7 @@
 
 	newtext = {|num, newCode, fadeTime=30|
 		var color;
+		//color = Color(1);
 		color = Color(*{1.0.rand}!3);// every new executed code has a random color
 		{//New text object
 			texts[num] = StaticText(win,Rect(640.rand,400.rand,640,400))
@@ -49,4 +50,3 @@
 
 }.fork
 )
-

@@ -35,7 +35,7 @@
 
 	//Poll.kr(onsets, onsets, 'onsets');
 
-	#pitch, hasFreq = Pitch.kr(in, 40.midicps, 79.midicps, 108.midicps, peakThreshold:0.5); //piano range.
+	#pitch, hasFreq = Pitch.kr(in, 40.midicps, 21.midicps, 108.midicps, peakThreshold:0.5); //piano range.
 	//Poll.kr(onsets, onsets);
 	//Out.ar(0, in.dup * 0.1);
 	SendPeakRMS.ar(in, 20, 3, '/peakRMS');

@@ -1,11 +1,10 @@
 //No Utopia, using this version is for duo with instrument.
 (
-s.reboot;
 ~numOuts = 12;
 // input
-"input-aiC.scd".resolveRelative.load;
+"input-aiC_in1.scd".resolveRelative.load;
 
-~soloDef = \addsynth;
+~soloDef = \default;
 
 ~soloBus = 0;
 

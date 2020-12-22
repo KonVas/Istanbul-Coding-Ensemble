@@ -3,7 +3,7 @@
 s.reboot;
 ~numOuts = 12;
 // input
-"input-aiC.scd".resolveRelative.load;
+"input-aiC_in0.scd".resolveRelative.load;
 
 ~soloDef = \addsynth;
 
